@@ -64,11 +64,11 @@
 <a class="jxr_linenumber" name="54" href="#54">54</a>  		<strong class="jxr_keyword">this</strong>.staticIp = staticIp;
 <a class="jxr_linenumber" name="55" href="#55">55</a>  	}
 <a class="jxr_linenumber" name="56" href="#56">56</a>  
-<a class="jxr_linenumber" name="57" href="#57">57</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> builder() {
-<a class="jxr_linenumber" name="58" href="#58">58</a>  		<strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a>();
+<a class="jxr_linenumber" name="57" href="#57">57</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> builder() {
+<a class="jxr_linenumber" name="58" href="#58">58</a>  		<strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a>();
 <a class="jxr_linenumber" name="59" href="#59">59</a>  	}
 <a class="jxr_linenumber" name="60" href="#60">60</a>  
-<a class="jxr_linenumber" name="61" href="#61">61</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> {
+<a class="jxr_linenumber" name="61" href="#61">61</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> {
 <a class="jxr_linenumber" name="62" href="#62">62</a>  
 <a class="jxr_linenumber" name="63" href="#63">63</a>  		<strong class="jxr_keyword">private</strong> NetworkAttachmentType networkAttachmentType;
 <a class="jxr_linenumber" name="64" href="#64">64</a>  		<strong class="jxr_keyword">private</strong> String macAddress;
@@ -80,7 +80,7 @@
 <a class="jxr_linenumber" name="70" href="#70">70</a>  <em class="jxr_javadoccomment">		 * @param networkAttachmentType</em>
 <a class="jxr_linenumber" name="71" href="#71">71</a>  <em class="jxr_javadoccomment">		 * @return</em>
 <a class="jxr_linenumber" name="72" href="#72">72</a>  <em class="jxr_javadoccomment">		 */</em>
-<a class="jxr_linenumber" name="73" href="#73">73</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> networkAttachmentType(
+<a class="jxr_linenumber" name="73" href="#73">73</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> networkAttachmentType(
 <a class="jxr_linenumber" name="74" href="#74">74</a>  				NetworkAttachmentType networkAttachmentType) {
 <a class="jxr_linenumber" name="75" href="#75">75</a>  			<strong class="jxr_keyword">this</strong>.networkAttachmentType = networkAttachmentType;
 <a class="jxr_linenumber" name="76" href="#76">76</a>  			<strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
@@ -91,7 +91,7 @@
 <a class="jxr_linenumber" name="81" href="#81">81</a>  <em class="jxr_javadoccomment">		 * @param macAddress</em>
 <a class="jxr_linenumber" name="82" href="#82">82</a>  <em class="jxr_javadoccomment">		 * @return</em>
 <a class="jxr_linenumber" name="83" href="#83">83</a>  <em class="jxr_javadoccomment">		 */</em>
-<a class="jxr_linenumber" name="84" href="#84">84</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> macAddress(String macAddress) {
+<a class="jxr_linenumber" name="84" href="#84">84</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> macAddress(String macAddress) {
 <a class="jxr_linenumber" name="85" href="#85">85</a>  			<strong class="jxr_keyword">this</strong>.macAddress = macAddress;
 <a class="jxr_linenumber" name="86" href="#86">86</a>  			<strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="87" href="#87">87</a>  		}
@@ -105,7 +105,7 @@
 <a class="jxr_linenumber" name="95" href="#95">95</a>  <em class="jxr_javadoccomment">		 * @param guestPort</em>
 <a class="jxr_linenumber" name="96" href="#96">96</a>  <em class="jxr_javadoccomment">		 * @return</em>
 <a class="jxr_linenumber" name="97" href="#97">97</a>  <em class="jxr_javadoccomment">		 */</em>
-<a class="jxr_linenumber" name="98" href="#98">98</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> tcpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest,
+<a class="jxr_linenumber" name="98" href="#98">98</a>  		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> tcpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest,
 <a class="jxr_linenumber" name="99" href="#99">99</a>  				<strong class="jxr_keyword">int</strong> guestPort) {
 <a class="jxr_linenumber" name="100" href="#100">100</a> 			redirectRules.add(<strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/RedirectRule.html">RedirectRule</a>(NATProtocol.TCP, host, hostPort,
 <a class="jxr_linenumber" name="101" href="#101">101</a> 					guest, guestPort));
@@ -121,14 +121,14 @@
 <a class="jxr_linenumber" name="111" href="#111">111</a> <em class="jxr_javadoccomment">		 * @param guestPort</em>
 <a class="jxr_linenumber" name="112" href="#112">112</a> <em class="jxr_javadoccomment">		 * @return</em>
 <a class="jxr_linenumber" name="113" href="#113">113</a> <em class="jxr_javadoccomment">		 */</em>
-<a class="jxr_linenumber" name="114" href="#114">114</a> 		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> udpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest,
+<a class="jxr_linenumber" name="114" href="#114">114</a> 		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> udpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest,
 <a class="jxr_linenumber" name="115" href="#115">115</a> 				<strong class="jxr_keyword">int</strong> guestPort) {
 <a class="jxr_linenumber" name="116" href="#116">116</a> 			redirectRules.add(<strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/RedirectRule.html">RedirectRule</a>(NATProtocol.UDP, host, hostPort,
 <a class="jxr_linenumber" name="117" href="#117">117</a> 					guest, guestPort));
 <a class="jxr_linenumber" name="118" href="#118">118</a> 			<strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="119" href="#119">119</a> 		}
 <a class="jxr_linenumber" name="120" href="#120">120</a> 		
-<a class="jxr_linenumber" name="121" href="#121">121</a> 		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> staticIp(@Nullable String staticIp) {
+<a class="jxr_linenumber" name="121" href="#121">121</a> 		<strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> staticIp(@Nullable String staticIp) {
 <a class="jxr_linenumber" name="122" href="#122">122</a> 		   <strong class="jxr_keyword">this</strong>.staticIp = staticIp;
 <a class="jxr_linenumber" name="123" href="#123">123</a> 		   <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="124" href="#124">124</a> 		}

@@ -53,11 +53,11 @@
 <a class="jxr_linenumber" name="43" href="#43">43</a>        <strong class="jxr_keyword">this</strong>.redirectRules.addAll(redirectRules);
 <a class="jxr_linenumber" name="44" href="#44">44</a>     }
 <a class="jxr_linenumber" name="45" href="#45">45</a>  
-<a class="jxr_linenumber" name="46" href="#46">46</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> builder() {
-<a class="jxr_linenumber" name="47" href="#47">47</a>        <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a>();
+<a class="jxr_linenumber" name="46" href="#46">46</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> builder() {
+<a class="jxr_linenumber" name="47" href="#47">47</a>        <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a>();
 <a class="jxr_linenumber" name="48" href="#48">48</a>     }
 <a class="jxr_linenumber" name="49" href="#49">49</a>  
-<a class="jxr_linenumber" name="50" href="#50">50</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> {
+<a class="jxr_linenumber" name="50" href="#50">50</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> {
 <a class="jxr_linenumber" name="51" href="#51">51</a>  
 <a class="jxr_linenumber" name="52" href="#52">52</a>        <strong class="jxr_keyword">private</strong> Set&lt;RedirectRule&gt; redirectRules = Sets.newLinkedHashSet();
 <a class="jxr_linenumber" name="53" href="#53">53</a>  
@@ -68,7 +68,7 @@
 <a class="jxr_linenumber" name="58" href="#58">58</a>  <em class="jxr_javadoccomment">       * @param guestPort</em>
 <a class="jxr_linenumber" name="59" href="#59">59</a>  <em class="jxr_javadoccomment">       * @return</em>
 <a class="jxr_linenumber" name="60" href="#60">60</a>  <em class="jxr_javadoccomment">       */</em>
-<a class="jxr_linenumber" name="61" href="#61">61</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> tcpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest, <strong class="jxr_keyword">int</strong> guestPort) {
+<a class="jxr_linenumber" name="61" href="#61">61</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> tcpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest, <strong class="jxr_keyword">int</strong> guestPort) {
 <a class="jxr_linenumber" name="62" href="#62">62</a>           redirectRules.add(<strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/RedirectRule.html">RedirectRule</a>(NATProtocol.TCP, host, hostPort, guest, guestPort));
 <a class="jxr_linenumber" name="63" href="#63">63</a>           <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="64" href="#64">64</a>        }
@@ -80,7 +80,7 @@
 <a class="jxr_linenumber" name="70" href="#70">70</a>  <em class="jxr_javadoccomment">       * @param guestPort</em>
 <a class="jxr_linenumber" name="71" href="#71">71</a>  <em class="jxr_javadoccomment">       * @return</em>
 <a class="jxr_linenumber" name="72" href="#72">72</a>  <em class="jxr_javadoccomment">       */</em>
-<a class="jxr_linenumber" name="73" href="#73">73</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/DeviceDetails.html">Builder</a> udpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest, <strong class="jxr_keyword">int</strong> guestPort) {
+<a class="jxr_linenumber" name="73" href="#73">73</a>        <strong class="jxr_keyword">public</strong> <a href="../../../../org/jclouds/virtualbox/domain/NatAdapter.html">Builder</a> udpRedirectRule(String host, <strong class="jxr_keyword">int</strong> hostPort, String guest, <strong class="jxr_keyword">int</strong> guestPort) {
 <a class="jxr_linenumber" name="74" href="#74">74</a>           redirectRules.add(<strong class="jxr_keyword">new</strong> <a href="../../../../org/jclouds/virtualbox/domain/RedirectRule.html">RedirectRule</a>(NATProtocol.UDP, host, hostPort, guest, guestPort));
 <a class="jxr_linenumber" name="75" href="#75">75</a>           <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">this</strong>;
 <a class="jxr_linenumber" name="76" href="#76">76</a>        }
