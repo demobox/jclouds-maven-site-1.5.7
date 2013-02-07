@@ -62,7 +62,7 @@
 <a class="jxr_linenumber" name="52" href="#52">52</a>     <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> Servers&lt;T <strong class="jxr_keyword">extends</strong> Server&gt; <strong class="jxr_keyword">extends</strong> PaginatedCollection&lt;T&gt; {
 <a class="jxr_linenumber" name="53" href="#53">53</a>  
 <a class="jxr_linenumber" name="54" href="#54">54</a>        @ConstructorProperties({ <span class="jxr_string">"servers"</span>, <span class="jxr_string">"servers_links"</span> })
-<a class="jxr_linenumber" name="55" href="#55">55</a>        <strong class="jxr_keyword">protected</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseServerDetails.html">Servers</a>(Iterable&lt;T&gt; servers, Iterable&lt;Link&gt; servers_links) {
+<a class="jxr_linenumber" name="55" href="#55">55</a>        <strong class="jxr_keyword">protected</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseServers.html">Servers</a>(Iterable&lt;T&gt; servers, Iterable&lt;Link&gt; servers_links) {
 <a class="jxr_linenumber" name="56" href="#56">56</a>           <strong class="jxr_keyword">super</strong>(servers, servers_links);
 <a class="jxr_linenumber" name="57" href="#57">57</a>        }
 <a class="jxr_linenumber" name="58" href="#58">58</a>  
@@ -74,12 +74,12 @@
 <a class="jxr_linenumber" name="64" href="#64">64</a>        });
 <a class="jxr_linenumber" name="65" href="#65">65</a>     }
 <a class="jxr_linenumber" name="66" href="#66">66</a>  
-<a class="jxr_linenumber" name="67" href="#67">67</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseFlavorDetails.html">ToPagedIterable</a> <strong class="jxr_keyword">extends</strong> CallerArg0ToPagedIterable&lt;Server, ToPagedIterable&gt; {
+<a class="jxr_linenumber" name="67" href="#67">67</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseImageDetails.html">ToPagedIterable</a> <strong class="jxr_keyword">extends</strong> CallerArg0ToPagedIterable&lt;Server, ToPagedIterable&gt; {
 <a class="jxr_linenumber" name="68" href="#68">68</a>  
 <a class="jxr_linenumber" name="69" href="#69">69</a>        <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">final</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/NovaApi.html">NovaApi</a> api;
 <a class="jxr_linenumber" name="70" href="#70">70</a>  
 <a class="jxr_linenumber" name="71" href="#71">71</a>        @Inject
-<a class="jxr_linenumber" name="72" href="#72">72</a>        <strong class="jxr_keyword">protected</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseFlavorDetails.html">ToPagedIterable</a>(<a href="../../../../../../../org/jclouds/openstack/nova/v2_0/NovaApi.html">NovaApi</a> api) {
+<a class="jxr_linenumber" name="72" href="#72">72</a>        <strong class="jxr_keyword">protected</strong> <a href="../../../../../../../org/jclouds/openstack/nova/v2_0/functions/internal/ParseImageDetails.html">ToPagedIterable</a>(<a href="../../../../../../../org/jclouds/openstack/nova/v2_0/NovaApi.html">NovaApi</a> api) {
 <a class="jxr_linenumber" name="73" href="#73">73</a>           <strong class="jxr_keyword">this</strong>.api = checkNotNull(api, <span class="jxr_string">"api"</span>);
 <a class="jxr_linenumber" name="74" href="#74">74</a>        }
 <a class="jxr_linenumber" name="75" href="#75">75</a>  
